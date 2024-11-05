@@ -8,6 +8,7 @@
     "build": "react-gnome build",
     "bundle": "react-gnome bundle",
     "dev": "react-gnome start -m development -w",
+    "open": "react-gnome start -m development",
     "install-pkg": "meson install -C ./dist/.build/_build"
   },
   "dependencies": { "@reactgjs/renderer": "^0.0.1-beta.1", "react": "^18.3.1" },
