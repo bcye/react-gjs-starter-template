@@ -1,16 +1,19 @@
 {
   "name": "react-gjs-starter-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "A starter template for a React GJS Application",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "esbuild src/App.tsx --bundle '--external:gi://*' --external:system  --format=esm --outfile=dist/out.js",
-    "run": "gjs dist/out.js",
-    "dev": "bun run build && bun run run"
+    "build": "react-gnome build",
+    "bundle": "react-gnome bundle",
+    "dev": "react-gnome start -m development -w",
+    "install-pkg": "meson install -C ./dist/.build/_build"
   },
   "dependencies": { "@reactgjs/renderer": "^0.0.1-beta.1", "react": "^18.3.1" },
   "devDependencies": {
     "@types/react": "^18.3.12",
+    "@reactgjs/react-gnome": "link:@reactgjs/react-gnome",
     "esbuild": "^0.24.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.3"
