@@ -9,14 +9,14 @@ This repository contains a starting base for trying out the [react-gjs](https://
 
 ## Installation
 1. You need the `gtk`, `gtk-devel`, `gjs`, `gjs-devel` and `meson` libraries installed on your system, which are probably available under these names in your package manager.
-   2. Ex. for dnf (Fedora): `sudo dnf install gtk gtk-devel gjs gjs-devel meson`
+   1. Ex. for dnf (Fedora): `sudo dnf install gtk gtk-devel gjs gjs-devel meson`
 1. Clone the react-gnome repository as it isn't yet on NPM (in a separate folder)
-2. Inside the react-gnome folder:
-   3. Run `bun install`
-   4. Run `bun run build`
-   5. Run `bun link` (_this will expose the package to all other JS projects on your system and allow it to be consumed as if it was a normal NPM package_) [More about this](https://bun.sh/docs/cli/link)
+1. Inside the react-gnome folder:
+   1. Run `bun install`
+   1. Run `bun run build`
+   1. Run `bun link` (_this will expose the package to all other JS projects on your system and allow it to be consumed as if it was a normal NPM package_) [More about this](https://bun.sh/docs/cli/link)
 1. Inside this folder (react-gjs-starter-template)
-   2. Run `bun link @reactgjs/react-gnome`
+   1. Run `bun link @reactgjs/react-gnome`
 
 ## Developing
 You can run `bun run dev`, it will bundle, build and launch your application and restart it on code changes
